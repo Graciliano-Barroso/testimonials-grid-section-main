@@ -1,0 +1,134 @@
+:root {
+    /*Primary Colors*/
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --light-violet: hsl(264, 80%, 70%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Neutral Colors*/
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+main {
+    background: var(--Light-gray);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-grid {
+    padding: 300px 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    
+}
+
+img {    
+    border-radius: 50px;
+    width: 34px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.card {
+    padding: 40px;
+    border-radius: 10px;
+    color: var(--White);
+}
+
+.card-perfil {
+    margin-bottom: 25px;
+}
+
+.card-perfil img{
+    margin-right: 10px;
+}
+
+.graduate {
+    margin-top: 5px;
+    opacity: 50%;
+}
+
+.main-theme {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.content {
+    opacity: 50%;
+    font-size: 13px;
+}
+
+.card-first {
+    width: 470px;
+    height: 210px;
+    background: var(--Moderate-violet);
+    grid-column: 1/3;    
+}
+
+.card-first img {
+    border: 2px solid var(--light-violet);
+}
+
+.card-second {
+    width: 200px;
+    height: 210px;
+    background: var(--Very-dark-grayish-blue);
+}
+
+.card-second img {
+    border: 2px solid var(--Very-dark-blackish-blue);
+}
+
+.card-thisd {
+    width: 200px;
+    height: 210px;
+    background: var(--White);
+    grid-column: 1/2;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-thisd img{
+    border: 2px solid var(--Very-dark-grayish-blue);
+}
+
+.card-fourth {    
+    width: 470px;
+    height: 210px;
+    background: var(--Very-dark-blackish-blue);
+    grid-column: 2/4;
+}
+
+.card-fourth img{
+    border: 2px solid var(--Very-dark-grayish-blue);
+}
+
+.card-fifth {
+    background: var(--White);
+    color: var(--Very-dark-grayish-blue);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.card-fifth img {
+    border: 2px solid var(--Very-dark-grayish-blue);
+}
+
+@media screen and (max-width: 375px) {
+    .container-grid {
+        display: block;
+        padding: 20px;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        margin-bottom: 25px;
+    }
+}
